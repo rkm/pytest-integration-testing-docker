@@ -1,0 +1,14 @@
+
+[MASTER]
+
+[BASIC]
+
+good-names=log
+
+[FORMAT]
+
+indent-string=\t
+
+[MESSAGES CONTROL]
+
+disable=fixme,missing-docstring

@@ -1,0 +1,12 @@
+
+version: '3.1'
+
+services:
+  mongo-db:
+    image: mongo:4
+    restart: always
+    ports:
+      - 4567:27017 # Host:Container
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: test_user
+      MONGO_INITDB_ROOT_PASSWORD: test_pass

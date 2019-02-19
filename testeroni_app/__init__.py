@@ -1,0 +1,2 @@
+
+from .testeroni import App

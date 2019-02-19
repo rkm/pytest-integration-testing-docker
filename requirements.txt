@@ -1,0 +1,7 @@
+
+pylint == 2.2.*
+pymongo == 3.7.*
+pytest == 4.3.*
+
+# TODO
+# pytest-docker-fixtures
