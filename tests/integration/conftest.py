@@ -44,6 +44,7 @@ def assert_ci_build():
 
 @pytest.fixture(scope="function")
 def docker_test_app():
+
 	assert s.MDB_DATABASE.upper() != 'PROD', 'Should not test on the production database...'
 
 	return App()

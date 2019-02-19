@@ -9,12 +9,13 @@ from . import settings as s
 class App:
 
 	def __init__(self):
+
+		auth = ''
+
 		if s.MDB_USER:
 			mdb_user = urllib.parse.quote_plus(s.MDB_USER)
 			mdb_pass = urllib.parse.quote_plus(s.MDB_PASS)
 			auth = f'{mdb_user}:{mdb_pass}@'
-		else:
-			auth = ''
 
 		conn_str = f'mongodb://{auth}{s.MDB_HOST}:{s.MDB_PORT}'
 		print('\nConnection string: {}'.format(conn_str))
